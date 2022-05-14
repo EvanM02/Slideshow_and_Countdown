@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>The SlideShow</title>
+        <link rel="stylesheet" type="text/css" href="./CSS/slideshow.css">
+        <script src="./JavaScript/slideshow.js"></script>
+    </head>
+    <body>
+        <!--Title and information-->
+            <h1>Welcome to the slideshow and countdown timer</h1>
+            <p>Please click on the first dot and will start the slide show<br>
+            below the slide show will be a countdown timer that you can engage with. </p>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+    <!--START OF SLIDES WITH NUMBERS AND A CAPTION-->
+
+    <!--SLIDE ONE-->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="./Images/image_1.png" style="width:100%" alt="Sorry could not load image">
+      <div class="text">Beautiful overlook of the valley </div>
+    </div>
+  
+    <!--SLIDE TWO-->
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="./Images/image_2.png" style="width:100%" alt="Sorry could not load image">
+      <div class="text">The snowy mountain tops of the Himalayas </div>
+    </div>
+  
+    <!--SLIDE THREE-->
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="./Images/image_3.png" style="width:100%" alt="Sorry could not load image">
+      <div class="text">On mountain looking up at a stunning aura </div>
+    </div>
+
+    <!--SLIDE FOUR-->
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="./Images/image_4.png" style="width:100%" alt="Sorry could not load image">
+        <div class="text">A gorgeous photo of rolling hills, river, and mountains</div>
+      </div>
+    <!--END OF THE SLIDE SHOW -->
+      
+    <!-- NEXT AND PREVIOUS BUTTONS -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  </div>
+  <br>
+
+  <!-- DOTS AND CIRCLES-->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>
+
+    <!--Separator for the countdown timer-->
+                    <hr>
+
+    <!--Start of the countdown timer-->
+    <br>
+    <br>
+    <br>
+    <!--THIS IS THE COUNTDOWN PROGRAM-->
+    <p>How many seconds would you like to set the timer for?</p>
+    <input id="seconds" value=""/>
+    <button id="button_1" onclick="countdown()">Click Here</button>
+    <p id="timer"></p>
+    </body>
+</html>
