@@ -5,12 +5,34 @@
         <title>The SlideShow</title>
         <link rel="stylesheet" type="text/css" href="./CSS/slideshow.css">
         <script src="./JavaScript/slideshow.js"></script>
+
+        <!-- bootstrap links-->
+		    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
     </head>
     <body>
+      		<!--OTHER WEBSITE LINKS DROPDOWN MENU-->
+					<div class="dropdown navbar-light">
+						<a class="btn btn-secondary dropdown-toggle bg-white role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+							Websites
+						</a>
+							<ul class="dropdown-menu navbar-light  border-1 " aria-labelledby="dropdownMenuLink" >
+								<li><a class="dropdown-item" href="https://evanm02.github.io/Portfolio-Website/" target="_blank">Portfolio Website</a></li>
+                <li><a class="dropdown-item" href="https://evanm02.github.io/Academy_Cinemas/" target="_blank">Academy Cinemas Website</a></li>
+								<li><a class="dropdown-item" href="https://evanm02.github.io/Single_page_Website/" target="_blank">Single Page Website</a></li>
+								<li><a class="dropdown-item" href="https://evanm02.github.io/Calculator_App/" target="_blank">Calculator App</a></li>
+								<li><a class="dropdown-item" href="https://evanm02.github.io/The_Space_Station/" target="_blank">The Space Station Website</a></li>
+								<li><a class="dropdown-item" href="https://evanm02.github.io/Tic_Tac_Toe/" target="_blank">Tic Tac Toe</a></li>
+								<li><a class="dropdown-item" href="https://evanm02.github.io/Pizza_Website/" target="_blank">Pizza Website</a></li>
+                <li><a class="dropdown-item" href="https://evanm02.github.io/To_Do_App/" target="_blank">To Do App</a></li>                            
+							</ul>
+					</div>
+					<!--END OF DROP DOWN MENU-->
+
         <!--Title and information-->
-            <h1>Welcome to the slideshow and countdown timer</h1>
-            <p>Please click on the first dot and will start the slide show<br>
-            below the slide show will be a countdown timer that you can engage with. </p>
+            <h1>Welcome to the slideshow and countdown timer.</h1>
+            <p>Please click on the first dot and will start the slide show.<br>
+            below the slideshow will be a countdown timer that you can engage with. </p>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -35,14 +57,14 @@
     <div class="mySlides fade">
       <div class="numbertext">3 / 4</div>
       <img src="./Images/image_3.png" style="width:100%" alt="Sorry could not load image">
-      <div class="text">On mountain looking up at a stunning aura </div>
+      <div class="text">On a mountain looking up at a stunning aura </div>
     </div>
 
     <!--SLIDE FOUR-->
     <div class="mySlides fade">
         <div class="numbertext">4 / 4</div>
         <img src="./Images/image_4.png" style="width:100%" alt="Sorry could not load image">
-        <div class="text">A gorgeous photo of rolling hills, river, and mountains</div>
+        <div class="text">A gorgeous photo of rolling hills, rivers, and mountains</div>
       </div>
     <!--END OF THE SLIDE SHOW -->
       
@@ -61,6 +83,7 @@
   </div>
 
     <!--Separator for the countdown timer-->
+
                     <hr>
 
     <!--Start of the countdown timer-->

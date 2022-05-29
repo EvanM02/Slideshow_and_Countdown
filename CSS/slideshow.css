@@ -11,6 +11,7 @@ h1 {
         -webkit-text-fill-color: transparent;
         text-align: center;
 }
+
 p { color: #685206; 
     font-family: 'Helvetica Neue', sans-serif; 
     font-size: 14px; 
@@ -99,9 +100,9 @@ p { color: #685206;
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
+  -webkit-animation-duration: 10s;
   animation-name: fade;
-  animation-duration: 1.5s;
+  animation-duration: 10s;
 }
 
 @-webkit-keyframes fade {
@@ -154,4 +155,9 @@ p { color: #685206;
 #button_1:hover{
     background-color: black;
     color:yellow;
+}
+
+/* DROP DOWN MENU */
+#dropdownMenuLink {
+  color: black;
 }
