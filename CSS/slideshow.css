@@ -279,13 +279,14 @@ hr {
   #button_1 {
   font-size: 0.8rem;
   grid-column-start: 2;
-  height: 1.4rem;
+  height: 2rem;
   }
   #seconds {
     grid-column-start: 1;
     grid-column-end: 1;
     font-size: 1rem;
-    height: 1.5rem;
+    height: 2rem;
+    margin-left: 5%;
   }
 }
 
@@ -293,6 +294,6 @@ hr {
   .align_dots  {
     grid-column-start: 1;
     text-align: none;
-
+    margin-left: 5%;
   }
 }
