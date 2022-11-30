@@ -2,7 +2,11 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>Slideshow and Countdown timer</title>
+        <title> Slideshow and Countdown Timer </title>
+        <meta name="description" content=" This website has a slideshow and a countdown timer ">
+        <meta name="keywords" content=" slideshow, countdown, images, numbers ">        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./Images/Icon/countdown.png" type="image/icon" />
         <link rel="stylesheet" type="text/css" href="./CSS/slideshow.css">
         <script src="./JavaScript/slideshow.js"></script>
 
@@ -12,11 +16,11 @@
     </head>
     <body>
 <!--OTHER WEBSITE LINKS DROPDOWN MENU-->
-	<div class="dropdown navbar-light">
-		<a class="btn btn-secondary dropdown-toggle bg-white role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-			Websites
-		</a>
-		<ul class="dropdown-menu navbar-light  border-1 " aria-labelledby="dropdownMenuLink" >
+	<div class="dropdown">
+    <a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+      Websites
+  </a>
+		<ul class="dropdown-menu navbar-light" aria-labelledby="dropdownMenuLink" >
 			<li><a class="dropdown-item" href="https://evanm02.github.io/Portfolio-Website/"  >Portfolio Website</a></li>
 			<li><a class="dropdown-item" href="https://evanm02.github.io/Academy_Cinemas/"  >Academy Cinemas Website</a></li>
 			<li><a class="dropdown-item" href="https://evanm02.github.io/Slideshow_and_Countdown/"  >SlideShow and Countdown</a></li>
@@ -31,10 +35,10 @@
 	</div>
 <!--END OF DROP DOWN MENU-->
 
+<div class="grid_container">
 <!--Title and information-->
-<h1>Welcome to the slideshow and countdown timer.</h1>
-<p>Please click on the first dot and will start the slide show.<br>
-below the slideshow will be a countdown timer that you can engage with. </p>
+<h1>Welcome to the Slideshow and Countdown Timer.</h1>
+<p>Click on the a dot and the Slideshow will start </p>
 
 <!-- Slideshow container -->
 <div class="slideshow-container">
@@ -89,13 +93,14 @@ below the slideshow will be a countdown timer that you can engage with. </p>
                     <hr>
 
     <!--Start of the countdown timer-->
-    <br>
-    <br>
-    <br>
+
     <!--THIS IS THE COUNTDOWN PROGRAM-->
-    <p>How many seconds would you like to set the timer for?</p>
-    <input id="seconds" value=""/>
-    <button id="button_1" onclick="countdown()">Click Here</button>
+    <p class="timer_para">How many seconds would you like to set the timer for?</p>
+    <input id="seconds" placeholder="Input a Number " value=""/>
+    <button id="button_1" onclick="countdown()"> Start Timer </button>
     <p id="timer"></p>
+  
+</div>
+
     </body>
 </html>

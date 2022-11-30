@@ -1,40 +1,94 @@
-/* TITLE */
+body {
+  background: rgb(139,186,255);
+  background: radial-gradient(circle, rgba(139,186,255,1) 0%,
+   rgba(0,255,4,0.7089558235403537) 100%);
+}
 
+/*DropDown Website Menu Styles*/
+.btn {
+  border-width: 2px !important;
+  color: black !important;
+  border-color: black !important;
+  background-color: transparent !important;
+  font-weight: 500 !important;
+
+}
+.btn:hover {
+  background-color: black;
+
+}
+.dropdown-menu {
+  transition: all 0.5s ease-in-out;
+  background-color: rgb(71, 240, 73) !important;
+  box-shadow: 4px 4px black;
+}
+.dropdown-item {
+  animation: 2s fadeInn !important ;
+  animation-fill-mode: forwards !important ;
+  visibility: hidden;
+  color: rgb(0, 0, 0) !important ;
+  font-weight: 500 !important;
+}
+@keyframes fadeInn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+/* Grid Container Styling */
+.grid_container {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* Title Styling  */
 h1 {
-    text-align: center;
-    background: linear-gradient(
-        to right, 
-        hsl(98 100% 62%), 
-        hsl(204 100% 59%)
-        );
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        text-align: center;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 1;
+  text-align: center;
+  background: linear-gradient(
+      to right, 
+      rgb(223, 134, 228), 
+      rgb(255, 69, 69)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+  font-variant: small-caps;
+}
+p { 
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 2;
+  color: #3a3939; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 1.5rem; 
+  line-height: 24px; 
+  text-align: center;
 }
 
-p { color: #685206; 
-    font-family: 'Helvetica Neue', sans-serif; 
-    font-size: 14px; 
-    line-height: 24px; 
-    text-align: center;
 
-}
-
-* {box-sizing:border-box}
-
-/* Slideshow container */
+/* Slideshow Styling  */
 .slideshow-container {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 3;
   max-width: 1000px;
   position: relative;
   margin: auto;
 }
 
-/* Hide the images by default */
+/* This Hides The Slides */
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
+/* Next And Previous Buttons  */
 .prev, .next {
   cursor: pointer;
   position: absolute;
@@ -83,11 +137,13 @@ p { color: #685206;
 
 /* The dots/bullets/indicators */
 .dot {
+  grid-column-start: 2;
+  grid-row-start: 5;
   cursor: pointer;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: rgb(82, 81, 81);
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0.6s ease;
@@ -100,9 +156,9 @@ p { color: #685206;
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 10s;
+  -webkit-animation-duration: 5s;
   animation-name: fade;
-  animation-duration: 10s;
+  animation-duration: 5s;
 }
 
 @-webkit-keyframes fade {
@@ -115,49 +171,82 @@ p { color: #685206;
   to {opacity: 1}
 }
 
+hr {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 5;
+}
+
 /* countdown program*/
+.timer_para {
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 6;
+}
+
+/* Input Field  */
 #seconds {
-    background-color: rgb(236, 233, 233);
-    margin-left: 6in;
-    border-radius: 8px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: darkred;
+  width: 150px;
+  grid-column-start: 2;
+  grid-row-start: 7;
+  border-radius: 8px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(0, 7, 139);
+  box-shadow: 3px 3px 3px  rgb(0, 0, 0);
+  border: 3px groove black;
+
+}
+#seconds::placeholder {
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: 400;
+  color: black;
+}
+
+/* Start Timer Button */
+#button_1 {
+  margin-left: 60%;
+  width: 100px;
+  grid-column-start: 2;
+  grid-row-start: 7;
+  background-color: blanchedalmond;
+  border-radius: 8px;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  box-shadow: 3px 3px  black;
+}
+#button_1:hover{
+  width: 120px;
+  font-size: 1.2rem;
+  font-weight: 900;
+  box-shadow: 5px 5px  black;
+}
+#button:active {
+  background-color: lightcoral;
+  box-shadow: 0px 0px;
 }
 /* timer number*/
 #timer{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: large;
-    font-weight: 900;
-    font-family: 'Times New Roman', Times, serif;
-    color: black;
-    animation-name: stretch;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-out;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
+  grid-column-start: 1;
+  grid-column-end: span 3;
+  grid-row-start: 8;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: 900;
+  font-family: 'Times New Roman', Times, serif;
+  color: black;
+  animation-name: stretch;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 @keyframes stretch {
-    0% {
-        transform: scale(.7);
-        border-radius: 2ch;
-    }
+  0% {
+      transform: scale(.7);
+      border-radius: 2ch;
+  }
 }
 
-#button_1 {
-    background-color: blanchedalmond;
-    border-radius: 8px;
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 600;
-}
 
-#button_1:hover{
-    background-color: black;
-    color:yellow;
-}
-
-/* DROP DOWN MENU */
-#dropdownMenuLink {
-  color: black;
-}
