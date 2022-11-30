@@ -4,6 +4,21 @@ body {
    rgba(0,255,4,0.7089558235403537) 100%);
 }
 
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+  ::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+  ::-webkit-scrollbar-thumb {
+  background: #888; 
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+} 
+
 /*DropDown Website Menu Styles*/
 .btn {
   border-width: 2px !important;
@@ -249,4 +264,9 @@ hr {
   }
 }
 
-
+@media screen and (max-width: 835px) {
+  #button_1 {
+    margin-left: 0%;
+    grid-column-start: 3;
+  }
+}
