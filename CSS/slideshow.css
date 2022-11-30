@@ -272,13 +272,14 @@ hr {
 }
 
 @media screen and (max-width: 500px) {
+
   #button_1 {
   font-size: 1rem;
   grid-column-start: 2;
-  grid-column-end: span 3;
   }
   #seconds {
     grid-column-start: 1;
+    grid-column-end: 1;
     font-size: 1rem;
   }
   
