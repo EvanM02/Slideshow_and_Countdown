@@ -167,7 +167,6 @@ p {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-
 .active, .dot:hover {
   background-color: #717171;
 }
@@ -219,6 +218,7 @@ hr {
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   font-weight: 400;
   color: black;
+  text-align: center;
 }
 
 /* Start Timer Button */
@@ -227,7 +227,7 @@ hr {
   width: 100px;
   grid-column-start: 2;
   grid-row-start: 7;
-  background-color: blanchedalmond;
+  background-color: rgba(138, 138, 138, 0.358);
   border-radius: 8px;
   font-family: 'Times New Roman', Times, serif;
   font-weight: 600;
@@ -235,12 +235,14 @@ hr {
 }
 #button_1:hover{
   width: 120px;
-  font-size: 1.2rem;
+    font-size: 1.1rem;
   font-weight: 900;
   box-shadow: 5px 5px  black;
 }
-#button:active {
-  background-color: lightcoral;
+#button_1:active {
+  background-color: rgb(255, 255, 255);
+  color: blue;
+  border-color: rgb(255, 0, 0);
   box-shadow: 0px 0px;
 }
 /* timer number*/
@@ -280,14 +282,14 @@ hr {
   font-size: 0.8rem;
   grid-column-start: 2;
   height: 2rem;
-  margin-left: 10%;
+  margin-left: 20%;
   }
   #seconds {
     grid-column-start: 1;
     grid-column-end: 1;
     font-size: 1rem;
     height: 2rem;
-    margin-left: 10%;
+    margin-left: 20%;
   }
 }
 @media screen and (max-width: 473px) {
