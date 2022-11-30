@@ -270,3 +270,16 @@ hr {
     grid-column-start: 3;
   }
 }
+
+@media screen and (max-width: 500px) {
+  #button_1 {
+  font-size: 1rem;
+  width: 60px;
+
+  }
+  /* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 20px;
+}
+}
+
