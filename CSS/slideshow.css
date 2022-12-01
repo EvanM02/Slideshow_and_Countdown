@@ -1,23 +1,29 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background: rgb(139,186,255);
-  background: radial-gradient(circle, rgba(139,186,255,1) 0%,
-   rgba(0,255,4,0.7089558235403537) 100%);
+  background: rgb(139, 186, 255);
+  background: radial-gradient(
+    circle,
+    rgba(139, 186, 255, 1) 0%,
+    rgba(0, 255, 4, 0.7089558235403537) 100%
+  );
 }
 
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 10px;
 }
-  ::-webkit-scrollbar-track {
-  background: #f1f1f1; 
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
-  ::-webkit-scrollbar-thumb {
-  background: #888; 
-    border-radius: 15px;
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
-} 
+  background: #555;
+}
 
 /*DropDown Website Menu Styles*/
 .btn {
@@ -26,11 +32,9 @@ body {
   border-color: black !important;
   background-color: transparent !important;
   font-weight: 500 !important;
-
 }
 .btn:hover {
   background-color: black;
-
 }
 .dropdown-menu {
   transition: all 0.5s ease-in-out;
@@ -67,26 +71,21 @@ h1 {
   grid-column-end: span 3;
   grid-row-start: 1;
   text-align: center;
-  background: linear-gradient(
-      to right, 
-      rgb(223, 134, 228), 
-      rgb(255, 69, 69)
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, rgb(223, 134, 228), rgb(255, 69, 69));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   font-variant: small-caps;
 }
-p { 
+p {
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 2;
-  color: #3a3939; 
-  font-family: 'Helvetica Neue', sans-serif; 
-  font-size: 1.5rem; 
-  line-height: 24px; 
+  color: #3a3939;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.5rem;
+  line-height: 24px;
   text-align: center;
 }
-
 
 /* Slideshow Styling  */
 .slideshow-container {
@@ -104,7 +103,8 @@ p {
 }
 
 /* Next And Previous Buttons  */
-.prev, .next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -126,8 +126,9 @@ p {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 /* Caption text */
@@ -153,7 +154,7 @@ p {
 /* The dots/bullets/indicators */
 .align_dots {
   text-align: center;
-  grid-column-start: 1 ;
+  grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 4;
 }
@@ -167,7 +168,8 @@ p {
   display: inline-block;
   transition: background-color 0.6s ease;
 }
-.active, .dot:hover {
+.active,
+.dot:hover {
   background-color: #717171;
 }
 
@@ -180,15 +182,22 @@ p {
 }
 
 @-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
-
 
 /* Separating line */
 .dividing_line {
@@ -221,14 +230,14 @@ p {
   grid-column-start: 2;
   grid-row-start: 7;
   border-radius: 8px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: rgb(0, 7, 139);
-  box-shadow: 3px 3px 3px  rgb(0, 0, 0);
+  box-shadow: 3px 3px 3px rgb(0, 0, 0);
   border: 3px groove black;
-
 }
 #seconds::placeholder {
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-weight: 400;
   color: black;
   text-align: center;
@@ -242,15 +251,15 @@ p {
   grid-row-start: 7;
   background-color: rgba(138, 138, 138, 0.358);
   border-radius: 8px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-weight: 600;
-  box-shadow: 3px 3px  black;
+  box-shadow: 3px 3px black;
 }
-#button_1:hover{
+#button_1:hover {
   width: 120px;
-    font-size: 1.1rem;
+  font-size: 1.1rem;
   font-weight: 900;
-  box-shadow: 5px 5px  black;
+  box-shadow: 5px 5px black;
 }
 #button_1:active {
   background-color: rgb(255, 255, 255);
@@ -259,15 +268,15 @@ p {
   box-shadow: 0px 0px;
 }
 /* timer number*/
-#timer{
+#timer {
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 8;
   text-align: center;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: large;
   font-weight: 900;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   color: black;
   animation-name: stretch;
   animation-duration: 0.5s;
@@ -278,8 +287,8 @@ p {
 }
 @keyframes stretch {
   0% {
-      transform: scale(.7);
-      border-radius: 2ch;
+    transform: scale(0.7);
+    border-radius: 2ch;
   }
 }
 
@@ -292,10 +301,10 @@ p {
 
 @media screen and (max-width: 500px) {
   #button_1 {
-  font-size: 0.8rem;
-  grid-column-start: 2;
-  height: 2rem;
-  margin-left: 20%;
+    font-size: 0.8rem;
+    grid-column-start: 2;
+    height: 2rem;
+    margin-left: 20%;
   }
   #seconds {
     grid-column-start: 1;
@@ -306,7 +315,7 @@ p {
   }
 }
 @media screen and (max-width: 473px) {
-  .align_dots  {
+  .align_dots {
     grid-column-start: 1;
     text-align: none;
   }
