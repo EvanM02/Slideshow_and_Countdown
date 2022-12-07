@@ -71,7 +71,7 @@ h1 {
   grid-column-end: span 3;
   grid-row-start: 1;
   text-align: center;
-  background: linear-gradient(to right, rgb(223, 134, 228), rgb(255, 69, 69));
+  background: linear-gradient(to right, rgb(0, 0, 0), rgb(100, 100, 100));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-variant: small-caps;
