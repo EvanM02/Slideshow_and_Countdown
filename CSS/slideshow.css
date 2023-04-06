@@ -227,11 +227,12 @@ p {
 /* Input Field  */
 #seconds {
   width: 150px;
+  background-color: white;
   grid-column-start: 2;
   grid-row-start: 7;
   border-radius: 8px;
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  color: rgb(0, 7, 139);
+  color: rgb(0, 0, 0);
   box-shadow: 3px 3px 3px rgb(0, 0, 0);
   border: 3px groove black;
 }
@@ -254,6 +255,7 @@ p {
   font-family: "Times New Roman", Times, serif;
   font-weight: 600;
   box-shadow: 3px 3px black;
+  color: black;
 }
 #button_1:hover {
   width: 120px;
@@ -267,28 +269,289 @@ p {
   border-color: rgb(255, 0, 0);
   box-shadow: 0px 0px;
 }
-/* timer number*/
+
+/* Style for the message that appears when the user tries to input a negative number*/
+.message {
+  letter-spacing: 0.2rem;
+  text-align: center;
+  background-color: wheat;
+  color: #1d1d1d;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-in-out;
+}
+
+.message:hover {
+  background-color: #000000;
+  color: #faf200;
+  text-shadow: none;
+  transform: translate(-50%, -50%) scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 99, 132, 0.5);
+}
+
+.animation {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.add-animation {
+  animation-name: add-animation;
+}
+
+.remove-animation {
+  animation-name: remove-animation;
+}
+
+@keyframes add-animation {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: #e0ffe0;
+  }
+}
+
+@keyframes remove-animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Style for the message that appears when the timer is done*/
+.messagetwo {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: whitesmoke 2px groove;
+  background-color: #000000;
+  text-transform: uppercase;
+  text-shadow: red 2px 2px;
+  text-align: center;
+  font-size: 1.2rem;
+  letter-spacing: 0.5rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: yellow;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(209, 0, 0, 0.3);
+}
+
+.animation {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+}
+
+.add-animation {
+  animation-name: add-animation;
+}
+
+.remove-animation {
+  animation-name: remove-animation;
+}
+
+@keyframes add-animation {
+  from {
+    background-color: #fff;
+  }
+  to {
+    background-color: #e0ffe0;
+  }
+}
+
+@keyframes remove-animation {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* RESTART BUTTON STYLING */
+.restart-btn {
+  background-color: #00eeff;
+  color: black;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0px 0px 10px black;
+}
+
+.restart-btn:hover {
+  background-color: #f44336;
+}
+
+.restart-btn:active {
+  transform: translateY(2px);
+}
+
+/* timer number styling*/
 #timer {
   grid-column-start: 1;
   grid-column-end: span 3;
   grid-row-start: 8;
+  height: 8rem;
+  padding-top: 40px;
   text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: large;
+  font-family: "Arial", sans-serif;
+  font-size: 6rem;
   font-weight: 900;
-  font-family: "Times New Roman", Times, serif;
-  color: black;
-  animation-name: stretch;
-  animation-duration: 0.5s;
+  color: white;
+  background: linear-gradient(
+    to right,
+    hsl(335, 94%, 64%),
+    hsl(303, 91%, 55%),
+    hsl(282, 89%, 48%),
+    hsl(262, 87%, 42%),
+    hsl(247, 84%, 38%),
+    hsl(227, 81%, 34%),
+    hsl(221, 85%, 44%),
+    hsl(209, 90%, 54%),
+    hsl(198, 94%, 64%),
+    hsl(183, 97%, 72%),
+    #f72585,
+    #b5179e,
+    #7209b7,
+    #560bad,
+    #480ca8,
+    #3a0ca3,
+    #3f37c9,
+    #4361ee,
+    #4895ef,
+    #4cc9f0,
+    #00d2ff,
+    #008ff9,
+    #0055ff,
+    #1b3fff,
+    #5e21a1,
+    #d200ff,
+    #ff0099,
+    #ff6b00,
+    #ffc300,
+    #00c9b1
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation-name: stretch, color;
+  animation-duration: 0.5s, 10s;
   animation-timing-function: ease-out;
-  animation-direction: alternate;
+  animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
-  animation-play-state: running;
 }
 @keyframes stretch {
   0% {
     transform: scale(0.7);
     border-radius: 2ch;
+  }
+}
+@keyframes color {
+  0% {
+    background-image: linear-gradient(
+      to right,
+      #f72585,
+      #b5179e,
+      #7209b7,
+      #560bad,
+      #480ca8,
+      #3a0ca3,
+      #3f37c9,
+      #4361ee,
+      #4895ef,
+      #4cc9f0
+    );
+  }
+  20% {
+    background-image: linear-gradient(
+      to right,
+      #ff0000,
+      #ff3300,
+      #ff6600,
+      #ff9900,
+      #ffcc00,
+      #ffff00,
+      #ccff00,
+      #99ff00,
+      #66ff00,
+      #33ff00
+    );
+  }
+  40% {
+    background-image: linear-gradient(
+      to right,
+      #00ff00,
+      #00ff33,
+      #00ff66,
+      #00ff99,
+      #00ffcc,
+      #00ffff,
+      #00ccff,
+      #0099ff,
+      #0066ff,
+      #0033ff
+    );
+  }
+  60% {
+    background-image: linear-gradient(
+      to right,
+      #8000ff,
+      #9e00ff,
+      #bd00ff,
+      #db00ff,
+      #ff00ff,
+      #ff00db,
+      #ff00bd,
+      #ff009e,
+      #ff0080,
+      #ff0066
+    );
+  }
+  80% {
+    background-image: linear-gradient(
+      to right,
+      #ff0000,
+      #ff1a1a,
+      #ff3333,
+      #ff4d4d,
+      #ff6666,
+      #ff8080,
+      #ff9999,
+      #ffb3b3,
+      #ffcccc,
+      #ffe6e6
+    );
+  }
+  100% {
+    background-image: linear-gradient(
+      to right,
+      #f72585,
+      #b5179e,
+      #7209b7,
+      #560bad,
+      #480ca8,
+      #3a0ca3,
+      #3f37c9,
+      #4361ee,
+      #4895ef,
+      #4cc9f0
+    );
   }
 }
 
